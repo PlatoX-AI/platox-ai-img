@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  platox-ai-img:
+    build: .
+    image: linanw/platox-ai-img:master
+    ports:
+      - 883:80
+      - 220:8122
+    volumes:
+      - c:/Users/linanw/Desktop/fs-images:/goimg/img

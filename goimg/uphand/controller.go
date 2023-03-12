@@ -59,6 +59,7 @@ func (controller Controller) Get(w http.ResponseWriter, r *http.Request) {
 
 //Post 上传图片
 func (controller Controller) Post(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 
 	// 响应返回
 	res := new(UpdateResponse)
